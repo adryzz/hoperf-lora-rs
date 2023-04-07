@@ -1,0 +1,60 @@
+pub(crate) const REG_FIFO: u8 = 0x00;
+pub(crate) const REG_OP_MODE: u8 = 0x01;
+pub(crate) const REG_FRF_MSB: u8 = 0x06;
+pub(crate) const REG_FRF_MID: u8 = 0x07;
+pub(crate) const REG_FRF_LSB: u8 = 0x08;
+pub(crate) const REG_PA_CONFIG: u8 = 0x09;
+pub(crate) const REG_OCP: u8 = 0x0b;
+pub(crate) const REG_LNA: u8 = 0x0c;
+pub(crate) const REG_FIFO_ADDR_PTR: u8 = 0x0d;
+pub(crate) const REG_FIFO_TX_BASE_ADDR: u8 = 0x0e;
+pub(crate) const REG_FIFO_RX_BASE_ADDR: u8 = 0x0f;
+pub(crate) const REG_FIFO_RX_CURRENT_ADDR: u8 = 0x10;
+pub(crate) const REG_IRQ_FLAGS: u8 = 0x12;
+pub(crate) const REG_RX_NB_BYTES: u8 = 0x13;
+pub(crate) const REG_PKT_SNR_VALUE: u8 = 0x19;
+pub(crate) const REG_PKT_RSSI_VALUE: u8 = 0x1a;
+pub(crate) const REG_RSSI_VALUE: u8 = 0x1b;
+pub(crate) const REG_MODEM_CONFIG_1: u8 = 0x1d;
+pub(crate) const REG_MODEM_CONFIG_2: u8 = 0x1e;
+pub(crate) const REG_PREAMBLE_MSB: u8 = 0x20;
+pub(crate) const REG_PREAMBLE_LSB: u8 = 0x21;
+pub(crate) const REG_PAYLOAD_LENGTH: u8 = 0x22;
+pub(crate) const REG_MODEM_CONFIG_3: u8 = 0x26;
+pub(crate) const REG_FREQ_ERROR_MSB: u8 = 0x28;
+pub(crate) const REG_FREQ_ERROR_MID: u8 = 0x29;
+pub(crate) const REG_FREQ_ERROR_LSB: u8 = 0x2a;
+pub(crate) const REG_RSSI_WIDEBAND: u8 = 0x2c;
+pub(crate) const REG_DETECTION_OPTIMIZE: u8 = 0x31;
+pub(crate) const REG_INVERTIQ: u8 = 0x33;
+pub(crate) const REG_DETECTION_THRESHOLD: u8 = 0x37;
+pub(crate) const REG_SYNC_WORD: u8 = 0x39;
+pub(crate) const REG_INVERTIQ2: u8 = 0x3b;
+pub(crate) const REG_DIO_MAPPING_1: u8 = 0x40;
+pub(crate) const REG_VERSION: u8 = 0x42;
+pub(crate) const REG_PA_DAC: u8 = 0x4d;
+
+// modes;
+pub(crate) const MODE_LONG_RANGE_MODE: u8 = 0x80;
+pub(crate) const MODE_SLEEP: u8 = 0x00;
+pub(crate) const MODE_STDBY: u8 = 0x01;
+pub(crate) const MODE_TX: u8 = 0x03;
+pub(crate) const MODE_RX_CONTINUOUS: u8 = 0x05;
+pub(crate) const MODE_RX_SINGLE: u8 = 0x06;
+pub(crate) const MODE_CAD: u8 = 0x07;
+
+// PA config;
+pub(crate) const PA_BOOST: u8 = 0x80;
+
+// IRQ masks;
+pub(crate) const IRQ_TX_DONE_MASK: u8 = 0x08;
+pub(crate) const IRQ_PAYLOAD_CRC_ERROR_MASK: u8 = 0x20;
+pub(crate) const IRQ_RX_DONE_MASK: u8 = 0x40;
+pub(crate) const IRQ_CAD_DONE_MASK: u8 = 0x04;
+pub(crate) const IRQ_CAD_DETECTED_MASK: u8 = 0x01;
+
+//pub(crate) const RF_MID_BAND_THRESHOLD: u8 =    525E6;
+pub(crate) const RSSI_OFFSET_HF_PORT: u8 = 157;
+pub(crate) const RSSI_OFFSET_LF_PORT: u8 = 164;
+
+pub(crate) const MAX_PKT_LENGTH: u8 = 255;
